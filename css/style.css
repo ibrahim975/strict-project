@@ -124,6 +124,9 @@ pure desing css
 	padding: 100px 0 0;
 }
 /*design content*/
+.design-content {
+	padding-bottom: 50px;
+}
 .design-content .fa {
 	position: relative;
     font-size: 70px;
@@ -322,7 +325,7 @@ footer .row{
 
 .footer-end p{
 	padding-top: 15px;
-	color: #999999;
+	color: #2A3549;
 	font-size: 15px;
 }
 .footer-end ul li{
@@ -333,9 +336,51 @@ footer .row{
 	width: 40px;
 	height: 40px;
 	color: #fff;
-	background: #15a4fa;
+	background: #15A4FA;
 	line-height: 40px;
 	text-align: center;
 	border-radius: 8px;
 	font-size: 22px;
+	transition: .3s ease-in-out;
+}
+.footer-end .fa:hover{
+	transform:scale(1.2) rotate(360deg); 
+	background-color: #283E6B;
+}
+
+
+/*media qery mobile device here*/
+@media only screen and (max-width: 768px){
+	/*banner here*/
+	.banner-title h1 {
+	    font-size: 80px;
+	}
+	.banner-title p {
+	    padding: 20px 70px;
+	}
+	.banner-title i {
+	    margin-top: 50px;
+	}
+	/*deisgn here*/
+	.design-content{
+		padding-bottom: 30px;
+	}
+	.design-content .fa {
+	    font-size: 60px;
+	    width: 80px;
+	    height: 80px;
+	    line-height: 80px;
+	}
+	.design-content h4 {
+	    font-size: 18px;
+	    padding: 12px 0 9px;
+	}
+	.design-content p {
+	    font-size: 15px;
+	    padding: 0 40px;
+	}
+	/*footer here*/
+	.footer-btn {
+	    margin-top: -30px;
+	}
 }
